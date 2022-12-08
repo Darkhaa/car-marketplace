@@ -1,0 +1,35 @@
+@baseUrl = http://localhost:8080
+@access_token = 059fa04b-d996-465e-8820-7cd984300c53
+
+GET {{baseUrl}}/books
+content-type: application/json
+
+
+###
+// Client login
+POST {{baseUrl}}/books
+content-type: application/json
+
+{
+	"title" : "test",
+    "author" : "test"
+}
+
+###
+// Client login
+POST {{baseUrl}}/furnitures
+content-type: application/json
+
+{
+	"name" : "test",
+    "description" : "test",
+    "measurement" : "test",
+    "price" : 100.10,
+    "category_id" : 1,
+    "status" : "active"
+}
+
+###
+// Client login
+GET {{baseUrl}}/furnitures
+content-type: application/json
